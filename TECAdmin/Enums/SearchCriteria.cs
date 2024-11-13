@@ -9,11 +9,12 @@ namespace TECAdmin.enums
 {
     public enum SearchCriteria
     {
-        [Description("Search by Teacher")]
-        Teacher,
-        [Description("Search by Student")]
-        Student,
-        [Description("Search by Subject")]
-        Subject
+        [Description("Søg på fag")]
+        Subject = 1,
+        [Description("Søg på lærer ")]
+        Teacher = 2,
+        [Description("Søg på elev")]
+        Student = 3,
+
     }
 }
