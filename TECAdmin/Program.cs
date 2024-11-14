@@ -173,6 +173,7 @@ namespace TECAdmin
                                 errorMessage = "Ugyldigt id. Prøv igen.";
                                 break;
                             }
+                            Console.Write("\nTryk på en vilkårlig tast, for at komme tilbage");
                             Console.ReadKey();
                             break;
                         case SearchCriteria.Student:
@@ -213,6 +214,7 @@ namespace TECAdmin
                                 errorMessage = "Ingen match fundet.";
                                 break;
                             }
+                            Console.Write("\nTryk på en vilkårlig tast, for at komme tilbage");
                             Console.ReadKey();
                             break;
                         case SearchCriteria.Subject:
@@ -249,6 +251,7 @@ namespace TECAdmin
                                 errorMessage = "Ingen match fundet for det valgte fag id.";
                                 break;
                             }
+                            Console.Write("\nTryk på en vilkårlig tast, for at komme tilbage");
                             Console.ReadKey();
                             break;
                         default:
@@ -259,7 +262,6 @@ namespace TECAdmin
                 else
                 {
                     errorMessage = "Invalid choice. Please try again!";
-
                 }
             }
         }
