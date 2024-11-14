@@ -1,7 +1,4 @@
-﻿using TECAdmin.enums;
-using TECAdmin.Models;
-
-namespace TECAdmin
+﻿namespace TECAdmin
 {
     internal class Program
     {
