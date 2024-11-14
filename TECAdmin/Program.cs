@@ -107,7 +107,7 @@ namespace TECAdmin
                     Console.WriteLine($"{(int)searchCriteria}) {Utils.GetEnumDescription(searchCriteria)}");
                 }
 
-                Console.Write("\nSelect 1, 2, or 3");
+                Console.Write("\nVælg 1, 2 eller 3");
                 var keyPressed = Console.ReadKey(intercept: true).KeyChar;  // Read key without showing it in console
                 Console.WriteLine();  // Move to the next line after the key press
 
@@ -126,7 +126,7 @@ namespace TECAdmin
                             {
                                 Console.WriteLine($"{teacher.Id}) {teacher.FirstName} {teacher.LastName}");
                             }
-                            Console.Write("Vælg en lærer id fra listen: ");
+                            Console.Write("\nVælg en lærer id fra listen: ");
                             if (int.TryParse(Console.ReadLine(), out int selectedTeacherId))
                             {
                                 var selectedTeacher = teachersFromSubjects.FirstOrDefault(t => t.Id == selectedTeacherId);
@@ -223,7 +223,7 @@ namespace TECAdmin
                                 Console.WriteLine($"{index}) {subject.Name}");
                                 index++;
                             }
-                            Console.Write("Vælg et fag id fra listen: ");
+                            Console.Write("\nVælg et fag id fra listen: ");
                             if (int.TryParse(Console.ReadLine(), out int selectedSubjectId) && selectedSubjectId > 0 && selectedSubjectId <= subjects.Count)
                             {
                                 var selectedSubject = subjects[selectedSubjectId - 1];
