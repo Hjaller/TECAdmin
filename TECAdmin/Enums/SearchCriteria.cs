@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TECAdmin.enums
+namespace TECAdmin.Enums
 {
     public enum SearchCriteria
     {
