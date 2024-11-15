@@ -252,13 +252,13 @@
                             Console.ReadKey();
                             break;
                         default:
-                            errorMessage = "Invalid choice. Please try again!";
+                            errorMessage = "Ugyldigt valg. Prøv igen!";
                             break;
                     }
                 }
                 else
                 {
-                    errorMessage = "Invalid choice. Please try again!";
+                    errorMessage = "Ugyldigt valg. Prøv igen!";
                 }
             }
         }
